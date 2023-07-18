@@ -1,0 +1,11 @@
+.nav-button{
+    background-color:var(--color-nav-bg);
+    color:var(--color-nav-text);
+    width:100vw;
+    font-size:1rem;
+    border:none;
+}
+
+.nav-button:hover{
+    background-color:var(--color-nav-hov);
+}

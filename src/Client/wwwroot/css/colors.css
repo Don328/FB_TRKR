@@ -1,0 +1,22 @@
+:root{
+    --slate-gray:#60697d;
+    --bg-blue:#1796c6;
+    --pale-green:#8bda8f;
+    --pale-red:#d85454;
+    --off-white:#d1e3d5;
+
+    --color-bg-primary:var(--slate-gray);
+    --color-bg-toprow: var(--bg-blue);
+    --color-sec-toprow:var(--pale-green);
+    --color-bg-navbar:var(--bg-blue);
+    --color-btn-text:var(--off-white);
+    --color-btn-hov:var(--pale-green);
+    --color-nav-bg:transparent;
+    --color-nav-text:var(--off-white);
+    --color-nav-hov:var(--pale-green);
+    --color-tooltip-bg: var(--slate-gray);
+    --color-tooltip-txt: var(--off-white);
+    --color-tooltip-accent: var(--off-white);
+    --color-success-btn-bg: var(--pale-green);
+    --color-cancel-btn-bg: var(--pale-red);
+}

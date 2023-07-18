@@ -1,0 +1,23 @@
+﻿<div class="season-select">
+    <div class="row">
+        <EditForm class="season-form" EditContext=_editContext OnSubmit=Submit>
+            <InputNumber class="season-input" @bind-Value=_model.Season />
+            <button type="submit" class="submit-btn">Submit</button>
+        </EditForm>
+        @if(!string.IsNullOrEmpty(_errorMessage))
+        {
+            <div class="row">
+                <span class="error-message">@_errorMessage</span>        
+            </div>
+        }
+        else
+        {
+            <div class="row">
+                <span class="error-message-empty">error message</span>
+            </div>                
+        }
+        <div class="row">
+            <button type="button" class="cancel-btn" @onclick=Cancel>Cancel</button>
+        </div>
+    </div>
+</div>

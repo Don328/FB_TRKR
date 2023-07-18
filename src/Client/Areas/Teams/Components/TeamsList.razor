@@ -1,0 +1,22 @@
+﻿<div>
+    @if(TeamsConfirmed)
+    {
+        @foreach (var team in Teams)
+        {
+            <div class="row">
+                <TeamDisplay Team=team />
+            </div>
+        }        
+    }
+    else
+    {
+        @foreach (var team in Teams)
+        {
+            <div class="row">
+                <TeamEditDisplay 
+                    Team=team
+                    OnUpdate=UpdateTeamData/>
+            </div>
+        }
+    }
+</div>

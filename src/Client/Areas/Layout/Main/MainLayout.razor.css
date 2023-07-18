@@ -1,0 +1,43 @@
+.page {
+    width:100vw;
+    height:100vw;
+}
+
+.top-row {
+    position:fixed;
+    z-index: 1;
+    width:100vw;
+    height: 2.5rem;
+    display:flex;
+    justify-content: center;
+    background-color: var(--color-bg-toprow);
+    border-bottom: 3px solid var(--color-sec-toprow);
+}
+
+.main-row{
+    height:100vh;
+}
+
+.nav-label{
+    font-size:1rem;
+    color:var(--color-btn-text);
+}
+
+.nav-label:hover{
+    color:var(--color-btn-hov)
+}
+
+.sidebar {
+    position:fixed;
+    width:6rem;
+    height:100vh;
+    padding-top:3rem;
+    background-color: var(--color-bg-navbar);
+}
+
+.content {
+    height:100vmax;
+    margin-left: 6rem;
+    padding-left: 2rem;
+    padding-top: 2rem;
+}

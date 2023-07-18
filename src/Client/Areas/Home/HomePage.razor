@@ -1,0 +1,24 @@
+@page "/"
+
+<title>Home</title>
+
+<h1>Welcome to FB Tracker!</h1>
+
+<div class="row">
+    @if(@State.Season < 2020)
+    {
+        <span>Season not loaded...</span>
+    }
+</div>
+<div class="row">
+    @if(!State.TeamsConfirmed)
+    {
+        <span class="warning-msg">Teams not confirmed for selected season</span>
+    }
+</div>
+<div class="row">
+    @if(!State.SchedulesConfirmed)
+    {
+        <span class="warning-msg">Team schedules not confirmed for selected season</span>
+    }
+</div>

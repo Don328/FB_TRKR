@@ -1,0 +1,10 @@
+.season-badge{
+    font-size: 2rem;
+    border:none;
+    Color:var(--color-sec-toprow);
+    background-color:transparent;
+}
+
+.season-badge:hover{
+    color:var(--color-btn-text);
+}

@@ -1,0 +1,39 @@
+﻿@if (_editEnabled)
+{
+    <EditForm Model=_dto>
+        <label>
+            @Team.Locale
+            <InputText @bind-Value=_dto.Locale />
+        </label>
+        <label>
+            @Team.Name
+            <InputText @bind-Value=_dto.Name />
+        </label>
+        <label>
+            @Team.Abrev
+            <InputText @bind-Value=_dto.Abrev />
+        </label>
+        <label>
+            @Team.Conference
+            <InputSelect @bind-Value=_dto.Conference>
+                <option value=@Shared.Enums.Conference.AFC>AFC</option>
+                <option value=@Shared.Enums.Conference.NFC>NFC</option>
+            </InputSelect>
+        </label>
+        <label>
+            @Team.Region
+            <InputSelect @bind-Value=_dto.Region >
+                <option value=@Shared.Enums.Region.North>North</option>
+                <option value=@Shared.Enums.Region.South>South</option>
+                <option value=@Shared.Enums.Region.East>East</option>
+                <option value=@Shared.Enums.Region.West>West</option>
+            </InputSelect>
+        </label>
+        <button type="submit" class="submit-btn" @onclick=Update>Update</button>
+    </EditForm>
+}
+else
+{
+    <TeamDisplay Team=Team/>
+}
+<button type="toggle" class="edit-enable-btn" @onclick=ToggleEdit>enable</button>

@@ -1,0 +1,6 @@
+.warning-msg{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: var(--pale-red);
+    color: var(--off-white);
+}

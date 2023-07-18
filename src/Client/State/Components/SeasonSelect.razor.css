@@ -1,0 +1,31 @@
+.season-select{
+    position:static;
+    height:3.5rem;
+}
+
+.submit-btn{
+    background-color: var(--color-success-btn-bg);
+    height: 1.5rem;
+    float: right;
+    margin-top:.1rem;
+    margin-bottom: .1rem;
+}
+
+.cancel-btn{
+    background-color: var(--color-cancel-btn-bg);
+    float: right;
+    margin-top: .25rem;
+}
+
+.error-message{
+    background-color: var(--pale-red);
+    color: var(--off-white);
+    font-size: .5rem;
+    padding-left: .25rem;
+    padding-right: .25rem;
+}
+
+.error-message-empty{
+    font-size: .5rem;
+    visibility: hidden;
+}

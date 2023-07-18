@@ -1,0 +1,6 @@
+﻿<button class="season-badge" type="button" @onclick=ChangeSeason>
+       @if(@State.Season > 0)
+       {
+              <Tooltip Text=@TooltipText.seasonBadge>@State.Season</Tooltip>
+       }
+</button>
